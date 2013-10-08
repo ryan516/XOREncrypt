@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 import binascii
-def encrypt:
+def encrypt():
 	text = raw_input("Please input your information to encrypt: ")
 	text = text.split(,)
 	for char in text:
@@ -9,4 +9,8 @@ def encrypt:
 	key = key.split(,)
 	for char in key:
 		char = bin(int(binascii.hexlify(char),16))
+
+	print key
+
+
 		
