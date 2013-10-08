@@ -14,11 +14,15 @@ def encrypt():
     decryptionKey.append(bin(ord(char))[2:])
   decryptionKey = ''.join(decryptionKey)
 
-  print "The key is '%s'" %decryptionKey
-  print "The text is '%s'" %text2
+  #Verification String
+  print "The text is '%s'" %text1
+  print "The key is '%s'" %key
+  userInput1 = raw_input("Is this information ok? y/n ")
+  if userInput1 == 'y' or 'Y':
+  	print "I am encrypting your data, please hold on."
+  elif userInput1 == 'n' or 'N':
+  	print "Cancelled your operation."
+  else:
+  	print "I didn't understand that. Please type y or n (I do not accept yes or no as an answer.)"
 
 encrypt()
-
-
-
-		
