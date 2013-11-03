@@ -19,7 +19,6 @@ def encrypt():
   if userInput1 == 'y':
       chars = []
       for i, c in enumerate(input_text):
-          print(key[i%len(key)])
           chars.append(chr(ord(c) ^ ord(key[i%len(key)])))
       
       print(''.join(chars))
