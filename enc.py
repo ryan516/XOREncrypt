@@ -2,6 +2,12 @@
 import sys
 from itertools import cycle
 
+try: input = raw_input
+except NameError: pass
+
+try: from itertools import imap as map
+except ImportError: pass
+
 def encrypt():
   input_text = input("Please input your information to encrypt: ")
 
